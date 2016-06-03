@@ -1,7 +1,9 @@
 def prob_11 (frase):
-	sinEspacios = list(frase)
-	fraseUnida = sinEspacios.join(sinEspacios)
-	if frase == (nuevaFrase.reverse(fraseUnida)):
+	separar = frase.split()
+	sinEspacios = "".join(separar)
+	reversa = sinEspacios[::-1]
+	if sinEspacios == reversa:
 		return "Si es palindromo"
 	else:
 		return "No es palindromo"
+
