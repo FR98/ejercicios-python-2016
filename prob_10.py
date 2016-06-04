@@ -1,9 +1,9 @@
 import math
 
-def prob_10(tupla1, tupla2, tupla3):
-	d1= math.sqrt (((tupla2(0) - tupla1(0))**2 + (tupla2(1) - tupla1(1))**2))
-	d2= math.sqrt (((tupla3(0) - tupla2(0))**2 + (tupla3(1) - tupla2(1))**2))
-	d3= math.sqrt (((tupla1(0) - tupla3(0))**2 + (tupla1(1) - tupla3(1))**2))
+def prob_10(tu1, tu2, tu3):
+	d1= math.sqrt(((tu2(0) - tu1(0))**2 + (tu2(1) - tu1(1))**2))
+	d2= math.sqrt(((tu3(0) - tu2(0))**2 + (tu3(1) - tu2(1))**2))
+	d3= math.sqrt(((tu1(0) - tu3(0))**2 + (tu1(1) - tu3(1))**2))
 
 	if d1 == d2 and d2 == d3:
 		respuesta= ("Es un traingulo equilatero.")
@@ -11,7 +11,7 @@ def prob_10(tupla1, tupla2, tupla3):
 	elif d1 == d2 and d2 != d3:
 		respuesta= ("Es un triangulo isoceles.")
 
-	elif d1 == d3 and d2 != d1:
+	elif d1 == d3 and d3 != d2:
 		respuesta= ("Es un triangulo isoceles.")
 		
 	elif d2 == d3 and d3 != d1:
