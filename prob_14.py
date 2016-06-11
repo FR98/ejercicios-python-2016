@@ -1,4 +1,6 @@
 def prob_14(n):
+    if n < 1:
+        return False
     if n == 1:
         return True
     for i in range(2, n):
